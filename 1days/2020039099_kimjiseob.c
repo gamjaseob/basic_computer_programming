@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /* 학번과 이름을 쓰시오. */
 
 // 학번: 2020039099
@@ -15,7 +17,7 @@ int triangle(){
 
   area = height * width / 2;
   printf("%d\n" ,area);
-  
+
   return 0;
 }
 
@@ -29,6 +31,8 @@ int average(){
   avg = (n1 * n2 * n3) / 3;
 
   printf("%d\n", avg);
+
+  return 0;
 }
 
 // M3
@@ -46,11 +50,15 @@ int time(){
   sec = num - (min * 60);
 
   printf("%d분 %d초\n", min, sec);
+
+  return 0;
 }
 
 //메인 함수 실행
 int main(){
   triangle();
-  average();
-  time();
+  //average();
+  //time();
+
+  return 0;
 }
