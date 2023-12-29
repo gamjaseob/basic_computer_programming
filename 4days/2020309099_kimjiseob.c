@@ -98,29 +98,43 @@ int class7(){
    return 0;
 }
 
-//과제
-int task1();
-int task2();
-int task3();
+int class8(){
+   int x, y;
 
-int main(){
-   //수업
-   //class1();
-   //class2();
-   //class3();
-   //class4();
-   //class5();
-   //class6();
-   //class7();
+   printf("두 개의 정수를 입력하세요 : ");
+   scanf("%d %d", &x ,&y);
 
-   //과제
-   //task1();
-   //task2();
-   taks3();
+   printf("%d && %d의 결과값 : %d\n", x, y, x && y);
+   printf("%d || %d의 결과값 : %d\n", x, y, x || y);
+   printf("!%d의 결과값 : %d\n", x, !x);
 
    return 0;
 }
 
+int class9(){
+   int year, result;
+
+   printf("연도를 입력하세요 : ");
+   scanf("%d", &year);
+
+   result = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+   printf("result = %d\n", result);
+}
+
+int class10(){
+   int x, y;
+
+   printf("첫번째 수 : ");
+   scanf("%d", &x);
+
+   printf("두번째 수 : ");
+   scanf("%d", &y);
+
+   printf("큰  수 = %d\n", (x > y) ? x : y);
+   printf("작은수 = %d\n", (x < y) ? x : y);
+}
+
+//과제
 /*
 Q1. 조건연산자를 이용하여 사용자로부터 받은 세 개의 정수 중에서 가장 큰 수를 출력하시오.
 */
@@ -172,5 +186,25 @@ int taks3(){
    standard = (height - 100) * 0.9;
    
    weight > standard ? printf("비만입니다.\n") : printf("정상입니다.\n");
+   return 0;
+}
+
+int main(){
+   //수업
+   //class1();
+   //class2();
+   //class3();
+   //class4();
+   //class5();
+   //class6();
+   //class7();
+   //class8();
+   //class9();
+   //class10();
+   //과제
+   //task1();
+   //task2();
+   //taks3();
+
    return 0;
 }
